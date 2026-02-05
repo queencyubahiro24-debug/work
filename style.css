@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background: #fff; color: #222; }
+header { background: #000; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { font-size: 24px; }
+nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold; }
+.hero { background: url('https://images.unsplash.com/photo-1520975916090-3105956dac38') center/cover no-repeat; height: 70vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+.hero h2 { font-size: 40px; background: rgba(0,0,0,0.5); padding: 20px; }
+.section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+.section h2 { text-align: center; margin-bottom: 40px; }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { border: 1px solid #ddd; padding: 15px; text-align: center; transition: transform 0.3s; }
+.card img { width: 100%; height: 300px; object-fit: cover; }
+.card h3 { margin: 15px 0 10px; }
+.card p { color: #555; }
+.card button { margin-top: 10px; padding: 10px 20px; border: none; background: #000; color: #fff; cursor: pointer; transition: background 0.3s; }
+.card button:hover { background: #ffcc00; color: #000; }
+.card:hover { transform: translateY(-10px); }
+.about { text-align: center; max-width: 800px; margin: auto; }
+footer { background: #000; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+@media (max-width: 600px) {
+  .hero h2 { font-size: 28px; }
+  header { flex-direction: column; }
+  nav { margin-top: 10px; }
+}
